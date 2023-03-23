@@ -15,11 +15,8 @@ function checkFrequency(str, ch){
             obj[strArr[i]] +=  1;
         }
     }
-
-    console.log(obj);
-
     console.log("");
-
+    console.log(str);
     for (const key in obj) {
         if(key === ch){
             console.log(ch, "occured", obj[key], "times in " + str);
