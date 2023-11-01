@@ -19,9 +19,9 @@ function findLongestSequence(arr){
 
     }
 
-    console.log(max, " is Longest Consecutive Subsequence");
+    console.log("Length of longest sequence : ",max);
 
 }
 
-let arr = [100,11, 3, 21, 4, 6, 12, 5];
+let arr = [100,11,4,3,2,10];
 findLongestSequence(arr); 

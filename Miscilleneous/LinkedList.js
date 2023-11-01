@@ -20,7 +20,7 @@ function rearrangeList(head){
         arr.push(temp.data);
         temp = temp.next;
     }
-    console.log(arr);
+    console.log(arr); 
 
     let index = 0;
     let size = arr.length;

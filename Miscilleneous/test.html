@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* font-family: Poppins; */
+            font-size: 1.3rem;
+            margin: 10px;
+        }
+
+        .act:active {
+            color: green;
+        }
+
+        .act:visited {
+            color: chartreuse;
+        }
+    </style>
+</head>
+
+<body bgcolor="#202020" text="white">
+    <!-- <a href="mailto:vishalsavita809018@gmail.com">Send email</a> -->
+    <h2>font tag</h2>
+    <font color="red" face="forte" size="2">
+        Hello this is the font
+        <h1>This is the heading</h1>
+    </font>
+
+    <a href="#" class="act">Active link</a>
+    <a href="#" class="visited">Visited link</a>
+
+    <ol start="1">
+        <li>Hello</li>
+        <li>This</li>
+        <li>That</li>
+    </ol>
+
+    (a+b)<sup>2</sup> = a<sup>2</sup>+b<sup>2</sup>+2ab
+    <br>
+    C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub> = 6CO<sub>2</sub> + 6H<sub>2</sub>O
+
+    <!-- select tag multiple elements selection -->
+
+    <br><br>
+
+    <select name="cars" id="cars" size="2" multiple>
+        <option value="audi">Audi</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Maserati">Maserati</option>
+        <option value="Rolls">Rolls royace</option>
+    </select>
+
+    <br><br>
+
+    <select name="cars" id="cars">
+        <option value="#" selected disabled>Select a Car</option>
+        <optgroup label="Swedish Cars">
+            <option value="audi">Audi</option>
+            <option value="Mercedes">Mercedes</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="Maserati">Maserati</option>
+            <option value="Rolls">Rolls royace</option>
+        </optgroup>
+
+    </select>
+    <br><br>
+
+    <form action="none">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label><br>
+            <input type="text"><br>
+            <label for="name">Age</label><br>
+            <input type="text"><br>
+            <label for="name">Gender</label><br>
+            <input type="radio" name="gender" id="gem"><label for="gem">Male</label>
+            <input type="radio" name="gender" id="gef"><label for="gef">Female</label>
+        </fieldset>
+        <fieldset>
+            <legend>Adress</legend>
+            <label for="name">Landmark</label><br>
+            <input type="text"><br>
+            <label for="name">Full address</label><br>
+            <input type="text"><br>
+            <label for="name">Type of home</label><br>
+            <input type="radio" name="gender" id="ge"><span id="ge">Flat</span>
+            <input type="radio" name="gender" id="ge2">Own Building
+        </fieldset>
+
+        <!-- combo box = input typte text  + select tag with their options 
+        can be achieved by input and datalist tag instead of select tag -->
+        
+        <input list="browser" placeholder="Enter a browser name" type="text">
+        <datalist id="browser">
+            <option value="Chrome">Chrome</option>
+            <option value="Safari">Safari</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Opera">Opera</option>
+        </datalist>
+
+    </form>
+
+    <br><br>
+
+</body>
+
+</html>

@@ -10,7 +10,7 @@ m.set(2, "Vikram");
 m.set(1, "Vikrant");
 console.log("Map", m);
 console.log(m.get(2));
-console.log(m.keys());
+console.log(m.values());
 
 
 // Set -

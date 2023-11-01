@@ -27,4 +27,4 @@ function checkAnagram(str1, str2){
 
 }
 
-checkAnagram("rase", "care");
+checkAnagram("race", "care");

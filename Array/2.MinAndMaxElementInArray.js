@@ -2,34 +2,36 @@ function findMinMax(arr) {
 
     let min = arr[0];
     let max = arr[0];
-    if(arr.length == 2) {
-        if(arr[0] < arr[1]) {
-            console.log("Min : " + arr[0]);
-            console.log("Max : " + arr[1]);
-        }else{
-            console.log("Min : " + arr[1]);
-            console.log("Max : " + arr[0]);
-        }
-        return ;
+    let n = arr.length;
+    
+    if(n <= 0){
+        return [-Infinity,Infinity];
+    }else if(n === 1){           
+        return [arr[0],arr[0]];
+    }else if(n === 2){
+        return [Math.min(arr[0],arr[1]),Math.max(arr[0],arr[1])];         
     }
 
-    if (arr.length > 2) {
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
-            }
-
-            if (arr[i] > max) {
-                max = arr[i];
-            }
+    if (n > 2) {
+        for (let i = 0; i < n; i++) {
+            min = (arr[i] < min) ? arr[i] : min;
+            max = (arr[i] > max) ? arr[i] : max;
         }
+        return [min,max];
     }
-    console.log("Min : ", min);
-    console.log("Max : ", max);
 
 }
-let arr = [2, 13, 23, 21, 34, 43];
+let arr = [];
 console.log(arr);
-findMinMax(arr);
-// Min = 11
-// Max = 45
+console.log("Min : ", findMinMax(arr)[0]);
+console.log("Max : ", findMinMax(arr)[1]);
+
+// MOST EFFIECIENT APPROACH
+// const arr = [];
+
+// const min = Math.min(...arr);
+// const max = Math.max(...arr);
+
+// console.log(arr);
+// console.log(`Minimum value: ${min}`); // Output: Minimum value: 1
+// console.log(`Maximum value: ${max}`);
